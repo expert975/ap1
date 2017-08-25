@@ -15,7 +15,7 @@ int main()
 	a = b;
 	b = c;
 
-	printf("A = %d, B = %d\n", a, b);
+	printf("A = %d, B = %d \n", a, b);
 
 	return 0;
 }
