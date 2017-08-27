@@ -1,12 +1,22 @@
 #include <stdio.h>
 #include <time.h>
 
+//INCOMPLETE
+
 int main()
 {
-	SYSTEMTIME time;
+	char formatedDate[64];
+	time_t rawtime;
+	time(&rawtime);
+	struct tm *timeinfo = localtime(&rawtime);
+	strftime(formatedDate, sizeof(formatedDate), "%c", timeinfo);
+
+	printf("Você está vivo a %s segundos!\n", formatedDate);
+
+	return 0;
 }
 
-long calculateSecondsAlive()
+long long getTimeInSeconds()
 {
 	long year, month, day, hour, minute, seconds = 0;
 
@@ -26,7 +36,6 @@ long calculateSecondsAlive()
 	scanf("%d", &minute);
 
 	seconds = ((((year*12 + month)*30 + day)*24 + hour)*60 + minute)*60;
-	printf("Você está vivo a %d segundos!\n", seconds);
 
 	return seconds;
 }
