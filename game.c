@@ -4,7 +4,7 @@ int main()
 {
 	int startHour, startMinute, endHour, endMinute, durationHour, durationMinute = 0;
 
-	printf("Enter start hour and minute: ");
+	printf("Enter start hour: ");
 	scanf("%d", &startHour);
 
 	printf("Enter start minute: ");
