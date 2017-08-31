@@ -2,7 +2,7 @@
 
 int main()
 {
-	int number, hundreds, tens, ones = 0;
+	int number = 0, hundreds = 0, tens = 0, ones = 0;
 
 	printf("Enter a number: ");
 	scanf("%d", &number);

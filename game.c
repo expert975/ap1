@@ -16,6 +16,11 @@ int main()
 	printf("Enter end minute: ");
 	scanf("%d", &endMinute);
 
+	if (startHour > 23 || endHour > 23 || startMinute > 59 || endMinute > 59)
+	{
+		printf("That's not right, enter the right time!\n");
+		main();
+	}
 
 	if (startHour < endHour)
 	{
