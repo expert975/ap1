@@ -18,4 +18,6 @@ int main()
 
 	classAvg = sum/count;
 	printf("Class average: %f\n", classAvg);
+
+	return 0;
 }

@@ -24,4 +24,5 @@ int main()
 		x++;
 		y = powf(x,2);
 	}
+	return 0;
 }

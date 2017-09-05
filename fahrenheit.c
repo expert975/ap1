@@ -11,4 +11,6 @@ int main()
 		printf("Centigrade: %02.3f Fahrenheit: %02.1f\n", gCentigrade, gFahrenheit);
 		gFahrenheit += 0.5;
 	}
+
+	return 0;
 }
