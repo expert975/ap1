@@ -1,8 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 
 int main()
 {
 	float p1, p2, p3, mt, mediaFinal = 0;
+	malloc(100);
 
 	printf("Entre com a nota p1: ");
 	scanf("%f", &p1);
