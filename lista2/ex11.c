@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdint.h>
 
-uint8_t expoent;
-uint8_t base;
+uint8_t expoent = 0;
+uint8_t base = 0;
 uintmax_t result = 1;
 
 int main() {
@@ -13,7 +13,7 @@ int main() {
 
 	if(base <= 0 || expoent <= 0)
 	{
-		printf("Base and expoent must be positive!\n");
+		printf("Base and expoent must be positive numbers!\n");
 	}
 	else
 	{

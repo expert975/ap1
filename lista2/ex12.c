@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int n;
+int n = 0;
 
 int main() {
 	printf("Enter the nth number of the series: ");
@@ -8,7 +8,7 @@ int main() {
 
 	for (int i = 1; i <= n; i++)
 	{
-		printf("%d\n", n*n);
+		printf("%d\n", i*i);
 	}
 
 	return 0;

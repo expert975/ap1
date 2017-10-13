@@ -1,8 +1,9 @@
-CFLAGS=-Wall -Wextra -Wformat -std=c99
+CFLAGS= -std=c11 -Wall -Wextra
 SHELL:=/bin/bash
-exCount=1
+exCount=20
 
 all:
-	for i in `seq 1 $$exCount`; do echo gcc $(CFLAGS) -o ex$$i ex$$i.c; done
+	for i in `seq 1 $(exCount)`; do gcc $(CFLAGS) -o ex$$i ex$$i.c -lm; done
 
-
+clean:
+	for i in `seq 1 $(exCount)`; do rm -vf ex$$i; done
