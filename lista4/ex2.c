@@ -8,17 +8,17 @@ int main()
 	uint8_t row_count = 0;
 	uint8_t multipyingColumn = 0;
 	uint8_t multiplyingRow = 0;
-	int columnMultiplier = 1;
-	int rowMultiplier = 1;
+	int32_t columnMultiplier = 1;
+	int32_t rowMultiplier = 1;
 
 	printf("Enter row count: ");
 	scanf("%hhu", &row_count);
 	printf("Enter column count: ");
 	scanf("%hhu", &column_count);
 
-	int matrix[column_count][row_count];
-	int matrixAfterMultColumn[column_count][row_count];
-	int matrixAfterMultRow[column_count][row_count];
+	int32_t matrix[column_count][row_count];
+	int32_t matrixAfterMultColumn[column_count][row_count];
+	int32_t matrixAfterMultRow[column_count][row_count];
 
 	printf("Would you like to input all the values? [0-1] ");
 	scanf("%hhu", &wantsToInput);
