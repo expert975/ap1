@@ -8,7 +8,7 @@ int main()
 {
 	int8_t column = 0;
 	int8_t row = 0;
-	int matrix[10][10];
+	int32_t matrix[10][10];
 
 	srand((unsigned)time(NULL));
 
